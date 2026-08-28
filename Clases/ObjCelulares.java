@@ -5,18 +5,24 @@ public class ObjCelulares {
     private String Marca;
     private Double Precio;
     private int Cantidad;
-    private String Caracteristicas;
+    private String Ram;
+    private String Almacenamiento;
+    private String Promocion;
+    private Double Descuento;
 
     public ObjCelulares(){
 
     }
 
-    public ObjCelulares(String modelo, String marca, Double precio, int cantidad, String caracteristicas){
+    public ObjCelulares(String modelo, String marca, Double precio, int cantidad, String ram, String almacenamiento, String promocion, Double descuento){
         Modelo = modelo;
         Marca = marca;
         Precio = precio;
         Cantidad = cantidad;
-        Caracteristicas = caracteristicas;
+        Ram = ram;
+        Almacenamiento = almacenamiento;
+        Promocion = promocion;
+        Descuento = descuento;
     }
 
     public String getModelo() {
@@ -51,12 +57,36 @@ public class ObjCelulares {
         Cantidad = cantidad;
     }
 
-    public String getCaracteristicas() {
-        return Caracteristicas;
+    public String getRam() {
+        return Ram;
     }
 
-    public void setCaracteristicas(String caracteristicas) {
-        Caracteristicas = caracteristicas;
+    public void setRam(String ram) {
+        Ram = ram;
+    }
+
+    public String getAlmacenamiento() {
+        return Almacenamiento;
+    }
+
+    public void setAlmacenamiento(String almacenamiento) {
+        Almacenamiento = almacenamiento;
+    }
+
+    public String getPromocion() {
+        return Promocion;
+    }
+
+    public void setPromocion(String promocion) {
+        Promocion = promocion;
+    }
+
+    public Double getDescuento() {
+        return Descuento;
+    }
+
+    public void setDescuento(Double descuento) {
+        Descuento = descuento;
     }
 
     
