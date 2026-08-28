@@ -17,8 +17,21 @@ public class MetodosCelulares {
                 String ram = sc.next();
                 System.out.println("Ingrese el almacenamiento interno del celular: ");
                 String almacenamiento = sc.next();
-                System.out.println("Ingrese la cantidad que hay en stock: ");
-                int cantidad = sc.nextInt();
+
+                Boolean cantValida = true;
+                int cantidad = 0;
+
+                while(cantValida){
+                    System.out.print("Ingrese la cantidad que hay en stock: ");
+                if(sc.hasNextInt()){
+                    cantidad = sc.nextInt();
+                    cantValida = false; 
+                } else {
+                    System.out.println("Opción inválida. Debe ingresar un número entero.");
+                    sc.next();
+                }           
+                }
+                
                 System.out.println("Ingrese el precio del celular: ");
                 Double precio = sc.nextDouble();
                 System.out.println("Si el celular tiene promoción escriba SI o NO:");
