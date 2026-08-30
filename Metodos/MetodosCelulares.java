@@ -25,7 +25,7 @@ public class MetodosCelulares {
                 String promo = sc.next();
 
                 Double descuento = 0.0;
-                if (promo.trim().replaceAll("\\s+", "").equalsIgnoreCase(promo)) {
+                if (promo.trim().replaceAll("\\s+", "").equalsIgnoreCase("si")) {
                     System.out.println("Ingrese el valor del descuento: ");
                     descuento = sc.nextDouble();
                 }else{
