@@ -48,7 +48,7 @@ public class MetodosCompetencia {
                 for (int k = 0; k < a.length; k++) {
                     for (int k2 = 0; k2 < a.length; k2++) {
                         if (a[i][j].getCategoria().equalsIgnoreCase(cateActual)) {
-                            if (k < i) {
+                            if (k < i || (k == i && k2 < j)) {
                                 procesada = true;
                             }
                         }
