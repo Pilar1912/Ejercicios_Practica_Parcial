@@ -54,6 +54,7 @@ public class MetodosCompetencia {
                         }
                         
                     }
+                    if (procesada) break;
                 }
 
                 if(procesada == false){
