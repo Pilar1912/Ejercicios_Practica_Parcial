@@ -42,12 +42,43 @@ public class MetodosCompetencia {
 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[0].length; j++) {
-                System.out.println("El nombre del participante es: " + a[i][j].getNombre());
-                System.out.println("La edad del participante es: " + a[i][j].getEdad());
-                System.out.println("La categoria en la que participa es: " + a[i][j].getCategoria());
-                System.out.println("El resultado es: " + a[i][j].getResultado());
+                String cateActual = a[i][j].getCategoria();
+
+                Boolean procesada = false;
+                for (int k = 0; k < a.length; k++) {
+                    for (int k2 = 0; k2 < a.length; k2++) {
+                        if (a[i][j].getCategoria().equalsIgnoreCase(cateActual)) {
+                            if (k < i) {
+                                procesada = true;
+                            }
+                        }
+                        
+                    }
+                }
+
+                if(procesada == false){
+                    ObjCompetencia mejorDeEstaCategoria = a[i][j];
+
+                    for (int k = 0; k < a.length; k++) {
+                        for (int k2 = 0; k2 < a.length; k2++) {
+                            if (a[k][k2] != null && a[k][k2].getCategoria().equalsIgnoreCase(cateActual)) {
+                                if (a[k][k2].getResultado() > mejorDeEstaCategoria.getResultado()) {
+                                    mejorDeEstaCategoria = a[k][k2];
+                                }
+                            }
+                        }
+                    }
+                System.out.println("Categoría: " + mejorDeEstaCategoria.getCategoria());
+                System.out.println("  > Nombre: " + mejorDeEstaCategoria.getNombre());
+                System.out.println("  > Edad: " + mejorDeEstaCategoria.getEdad());
+                System.out.println("  > Mejor Resultado: " + mejorDeEstaCategoria.getResultado());
+                System.out.println("-------------------------------------------");
+                }
+
             }
         }
+
+        
         return a;
     }
     
