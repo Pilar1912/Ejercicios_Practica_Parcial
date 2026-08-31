@@ -46,7 +46,7 @@ public class MetodosCompetencia {
 
                 Boolean procesada = false;
                 for (int k = 0; k < a.length; k++) {
-                    for (int k2 = 0; k2 < a.length; k2++) {
+                    for (int k2 = 0; k2 < a[0].length; k2++) {
                         if (a[i][j].getCategoria().equalsIgnoreCase(cateActual)) {
                             if (k < i || (k == i && k2 < j)) {
                                 procesada = true;
@@ -60,7 +60,7 @@ public class MetodosCompetencia {
                     ObjCompetencia mejorDeEstaCategoria = a[i][j];
 
                     for (int k = 0; k < a.length; k++) {
-                        for (int k2 = 0; k2 < a.length; k2++) {
+                        for (int k2 = 0; k2 < a[0].length; k2++) {
                             if (a[k][k2] != null && a[k][k2].getCategoria().equalsIgnoreCase(cateActual)) {
                                 if (a[k][k2].getResultado() > mejorDeEstaCategoria.getResultado()) {
                                     mejorDeEstaCategoria = a[k][k2];
