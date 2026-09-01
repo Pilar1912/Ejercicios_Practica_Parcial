@@ -58,38 +58,52 @@ public class MetodosServicios {
         return a;
     }
 
-    public ObjServicios[][] MostrarInforme(ObjServicios[][] a, Scanner sc){
+    public ObjServicios[][] MostrarInforme(ObjServicios[][] a, Scanner sc) {
 
-        for(int mes = 1; mes <= 12; mes++){
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < a[0].length; j++) {
-                    ObjServicios mejorEmpleado = a[i][j];
+    for (int mes = 1; mes <= 12; mes++) {
 
-                    for(int k = 0; k < a.length; k++) {
-                        for (int k2 = 0; k2 < a[0].length; k2++) {
-                            if(a[k][k2].getFecha().getMonthValue() == mes){
-                                if(a[k][k2].getPrecio() > mejorEmpleado.getPrecio()){
-                                    mejorEmpleado = a[k][k2];
-                                }
+        String empleadoMes = "";
+        Double precioMes = 0.0;
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+
+                if (a[i][j] != null && a[i][j].getFecha().getMonthValue() == mes) {
+
+                    String empleadoActual = a[i][j].getEmpleado();
+                    Double precioActual = 0.0;
+
+                    for (int k = 0; k < a.length; k++) {
+                        for (int l = 0; l < a[0].length; l++) {
+
+                            if (a[k][l] != null && a[k][l].getEmpleado().equals(empleadoActual) && a[k][l].getFecha().getMonthValue() == mes) {
+                                precioActual += a[k][l].getPrecio();
                             }
                         }
                     }
 
-                    //if(mejorEmpleado.getFecha().getMonthValue() == mes){
-                        System.out.println("----------Informe de " + mejorEmpleado.getFecha().getMonth() + "----------" );
-                        System.out.println("Cliente: " + mejorEmpleado.getNombreCliente());
-                        System.out.println("Empleado: " + mejorEmpleado.getEmpleado());
-                        System.out.println("Servicio: " + mejorEmpleado.getServicio());
-                        System.out.println("Precio: " + mejorEmpleado.getPrecio());
-                        System.out.println("Fecha: " + mejorEmpleado.getFecha());
-                        System.out.println();
-                    //}
+                    if (precioActual > precioMes) {
+                        precioMes = precioActual;
+                        empleadoMes = empleadoActual;
+                    }
                 }
             }
         }
-        
-        
-        return a;
+
+        if (!empleadoMes.isEmpty()) {
+            System.out.println(
+                "El empleado con mayores ventas en el mes " + mes +
+                " es: " + empleadoMes +
+                " con un total de ventas de: " + precioMes
+            );
+        } else {
+            System.out.println(
+                "No se registraron ventas en el mes " + mes
+            );
+        }
     }
+
+    return a;
+}
     
 }
