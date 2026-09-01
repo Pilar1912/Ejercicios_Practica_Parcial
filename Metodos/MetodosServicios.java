@@ -60,118 +60,23 @@ public class MetodosServicios {
 
     public ObjServicios[][] MostrarInforme(ObjServicios[][] a, Scanner sc){
 
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a[0].length; j++) {
-                if(a[i][j].getFecha().getMonthValue() == 1){
-                    System.out.println("----------Informe de Enero----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 2){
-                    System.out.println("----------Informe de Febrero----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 3){
-                    System.out.println("----------Informe de Marzo----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 4){
-                    System.out.println("----------Informe de Abril----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 5){
-                    System.out.println("----------Informe de Mayo----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 6){
-                    System.out.println("----------Informe de Junio----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 7){
-                    System.out.println("----------Informe de Julio----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 8){
-                    System.out.println("----------Informe de Agosto----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 9){
-                    System.out.println("----------Informe de Septiembre----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 10){
-                    System.out.println("----------Informe de Octubre----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 11){
-                    System.out.println("----------Informe de Noviembre----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
-                }
-                if(a[i][j].getFecha().getMonthValue() == 12){
-                    System.out.println("----------Informe de Diciembre----------" );
-                    System.out.println("Cliente: " + a[i][j].getNombreCliente());
-                    System.out.println("Empleado: " + a[i][j].getEmpleado());
-                    System.out.println("Servicio: " + a[i][j].getServicio());
-                    System.out.println("Precio: " + a[i][j].getPrecio());
-                    System.out.println("Fecha: " + a[i][j].getFecha());
-                    System.out.println();
+        for(int mes = 1; mes <= 12; mes++){
+            for (int i = 0; i < a.length; i++) {
+                for (int j = 0; j < a[0].length; j++) {
+                    System.out.println("----------Informe de " + a[i][j].getFecha().getMonth() + "----------" );
+                    if(a[i][j].getFecha().getMonthValue() == mes){
+                        System.out.println("Cliente: " + a[i][j].getNombreCliente());
+                        System.out.println("Empleado: " + a[i][j].getEmpleado());
+                        System.out.println("Servicio: " + a[i][j].getServicio());
+                        System.out.println("Precio: " + a[i][j].getPrecio());
+                        System.out.println("Fecha: " + a[i][j].getFecha());
+                        System.out.println();
+                    }
                 }
             }
+
         }
+        
         
         return a;
     }
