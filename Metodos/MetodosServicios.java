@@ -75,7 +75,7 @@ public class MetodosServicios {
                         }
                     }
 
-                    if(mejorEmpleado.getFecha().getMonthValue() == mes){
+                    //if(mejorEmpleado.getFecha().getMonthValue() == mes){
                         System.out.println("----------Informe de " + mejorEmpleado.getFecha().getMonth() + "----------" );
                         System.out.println("Cliente: " + mejorEmpleado.getNombreCliente());
                         System.out.println("Empleado: " + mejorEmpleado.getEmpleado());
@@ -83,7 +83,7 @@ public class MetodosServicios {
                         System.out.println("Precio: " + mejorEmpleado.getPrecio());
                         System.out.println("Fecha: " + mejorEmpleado.getFecha());
                         System.out.println();
-                    }
+                    //}
                 }
             }
         }
