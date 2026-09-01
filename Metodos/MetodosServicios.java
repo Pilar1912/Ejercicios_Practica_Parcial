@@ -63,8 +63,8 @@ public class MetodosServicios {
         for(int mes = 1; mes <= 12; mes++){
             for (int i = 0; i < a.length; i++) {
                 for (int j = 0; j < a[0].length; j++) {
-                    System.out.println("----------Informe de " + a[i][j].getFecha().getMonth() + "----------" );
                     if(a[i][j].getFecha().getMonthValue() == mes){
+                        System.out.println("----------Informe de " + a[i][j].getFecha().getMonth() + "----------" );
                         System.out.println("Cliente: " + a[i][j].getNombreCliente());
                         System.out.println("Empleado: " + a[i][j].getEmpleado());
                         System.out.println("Servicio: " + a[i][j].getServicio());
