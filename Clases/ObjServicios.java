@@ -1,17 +1,19 @@
 package Clases;
 
+import java.time.LocalDate;
+
 public class ObjServicios {
     private String NombreCliente;
     private String Empleado;
     private String Servicio;
     private Double Precio;
-    private String Fecha;
+    private LocalDate Fecha;
 
     public ObjServicios(){
 
     }
 
-    public ObjServicios(String nombreCliente, String empleado, String servicio, Double precio, String fecha) {
+    public ObjServicios(String nombreCliente, String empleado, String servicio, Double precio, LocalDate fecha) {
         NombreCliente = nombreCliente;
         Empleado = empleado;
         Servicio = servicio;
@@ -51,13 +53,15 @@ public class ObjServicios {
         Precio = precio;
     }
 
-    public String getFecha() {
+    public LocalDate getFecha() {
         return Fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(LocalDate fecha) {
         Fecha = fecha;
     }
+
+    
     
     
     
