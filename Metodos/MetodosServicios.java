@@ -60,8 +60,6 @@ public class MetodosServicios {
 
     public ObjServicios[][] MostrarInforme(ObjServicios[][] a, Scanner sc){
 
-
-
         for(int mes = 1; mes <= 12; mes++){
             for (int i = 0; i < a.length; i++) {
                 for (int j = 0; j < a[0].length; j++) {
@@ -77,7 +75,7 @@ public class MetodosServicios {
                         }
                     }
 
-                    if(a[i][j].getFecha().getMonthValue() == mes){
+                    if(mejorEmpleado.getFecha().getMonthValue() == mes){
                         System.out.println("----------Informe de " + mejorEmpleado.getFecha().getMonth() + "----------" );
                         System.out.println("Cliente: " + mejorEmpleado.getNombreCliente());
                         System.out.println("Empleado: " + mejorEmpleado.getEmpleado());
@@ -88,7 +86,6 @@ public class MetodosServicios {
                     }
                 }
             }
-
         }
         
         
